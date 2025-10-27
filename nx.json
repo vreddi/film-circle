@@ -4,5 +4,18 @@
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "nxCloudId": "68fef55c56581e01d7cd68ce",
-  "defaultBase": "develop"
+  "defaultBase": "develop",
+  "plugins": [
+    {
+      "plugin": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static",
+        "buildDepsTargetName": "build-deps",
+        "watchDepsTargetName": "watch-deps"
+      }
+    }
+  ]
 }

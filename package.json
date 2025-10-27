@@ -2,11 +2,20 @@
   "name": "@fc/workspace",
   "version": "0.0.0",
   "private": true,
+  "scripts": {
+    "nx": "nx"
+  },
   "workspaces": [
     "packages/*",
     "apps/*"
   ],
   "devDependencies": {
+    "@nx/next": "22.0.1",
     "nx": "22.0.1"
+  },
+  "dependencies": {
+    "next": "~15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }
